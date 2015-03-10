@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "rootView.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) rootView *testView;
 
 @end
 
@@ -17,7 +20,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.testView = [[rootView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:self.testView];
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
