@@ -52,6 +52,7 @@
     self.frame = frame;
 }
 
+//打开此注释可以让button :click to move right 在view外面的部分也能响应方法，可以更加细致的定义return yes的判断
 //- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
 //    return YES;
 //}
